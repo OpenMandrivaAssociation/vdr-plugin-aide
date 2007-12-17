@@ -16,7 +16,6 @@ Source1:	aide-deu.tar.bz2
 Source2:	aide-dutch.tar.bz2
 Source3:	aide-eng.tar.bz2
 Source4:	aide-rus.tar.bz2
-BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildRequires:	vdr-devel >= 1.4.1-6
 Requires:	vdr-abi = %vdr_abi
 
