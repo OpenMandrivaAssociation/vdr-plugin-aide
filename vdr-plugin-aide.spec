@@ -2,7 +2,7 @@
 %define plugin	aide
 %define name	vdr-plugin-%plugin
 %define version	0.0.2
-%define rel	14
+%define rel	15
 
 Summary:	VDR plugin: VDR Aide
 Name:		%name
@@ -17,7 +17,7 @@ Source2:	aide-dutch.tar.bz2
 Source3:	aide-eng.tar.bz2
 Source4:	aide-rus.tar.bz2
 BuildRoot:	%{_tmppath}/%{name}-buildroot
-BuildRequires:	vdr-devel >= 1.4.1-6
+BuildRequires:	vdr-devel >= 1.6.0
 Requires:	vdr-abi = %vdr_abi
 
 %description
@@ -26,6 +26,7 @@ plain text help files on the TV screen.
 
 %prep
 %setup -q -n %plugin-%version -a 1 -a 2 -a 3 -a 4
+%vdr_plugin_prep
 
 %build
 %vdr_plugin_build
