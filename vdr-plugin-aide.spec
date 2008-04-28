@@ -2,7 +2,7 @@
 %define plugin	aide
 %define name	vdr-plugin-%plugin
 %define version	0.0.2
-%define rel	15
+%define rel	16
 
 Summary:	VDR plugin: VDR Aide
 Name:		%name
