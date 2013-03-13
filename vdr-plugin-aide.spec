@@ -1,13 +1,9 @@
-
 %define plugin	aide
-%define name	vdr-plugin-%plugin
-%define version	0.0.2
-%define rel	19
 
 Summary:	VDR plugin: VDR Aide
-Name:		%name
-Version:	%version
-Release:	%mkrel %rel
+Name:		vdr-plugin-%plugin
+Version:	0.0.2
+Release:	20
 Group:		Video
 License:	GPL
 URL:		http://vdr.bluox.org/download/?path=vdr-aide/
@@ -16,7 +12,6 @@ Source1:	aide-deu.tar.bz2
 Source2:	aide-dutch.tar.bz2
 Source3:	aide-eng.tar.bz2
 Source4:	aide-rus.tar.bz2
-BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildRequires:	vdr-devel >= 1.6.0
 Requires:	vdr-abi = %vdr_abi
 
@@ -32,17 +27,7 @@ plain text help files on the TV screen.
 %vdr_plugin_build
 
 %install
-rm -rf %{buildroot}
 %vdr_plugin_install
-
-%clean
-rm -rf %{buildroot}
-
-%post
-%vdr_plugin_post %plugin
-
-%postun
-%vdr_plugin_postun %plugin
 
 %files -f %plugin.vdr
 %defattr(-,root,root)
