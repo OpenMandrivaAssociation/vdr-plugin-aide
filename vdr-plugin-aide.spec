@@ -3,7 +3,7 @@
 Summary:	VDR plugin: VDR Aide
 Name:		vdr-plugin-%plugin
 Version:	0.0.2
-Release:	20
+Release:	21
 Group:		Video
 License:	GPL
 URL:		http://vdr.bluox.org/download/?path=vdr-aide/
