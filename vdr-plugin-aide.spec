@@ -6,7 +6,7 @@ Version:	0.0.2
 Release:	22
 Group:		Video
 License:	GPL
-URL:		http://vdr.bluox.org/download/?path=vdr-aide/
+URL:		https://vdr.bluox.org/download/?path=vdr-aide/
 Source:		http://vdr.bluox.org/download/vdr-aide/vdr-%plugin-%version.tar.bz2
 Source1:	aide-deu.tar.bz2
 Source2:	aide-dutch.tar.bz2
